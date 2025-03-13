@@ -8,7 +8,7 @@
         
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         Style="{StaticResource MaterialDesignWindow}"
-        DataContext="{StaticResource MainVM}"
+        DataContext="{StaticResource ObjectVM}"
         ResizeMode="CanMinimize"
         x:Name="window"
         
@@ -29,10 +29,6 @@
             <!--các element binding từ selected item-->
             <materialDesign:Card Grid.Row="0" Margin="5">
                 <Grid>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="91*"/>
-                        <ColumnDefinition Width="699*"/>
-                    </Grid.ColumnDefinitions>
                     <Grid.RowDefinitions>
                         <RowDefinition></RowDefinition>
                         <RowDefinition></RowDefinition>
@@ -43,15 +39,15 @@
                         <RowDefinition></RowDefinition>
                     </Grid.RowDefinitions>
                     <TextBox Grid.Row="0" Text="{Binding DisplayName, UpdateSourceTrigger=PropertyChanged}" Margin="5" materialDesign:HintAssist.Hint="Tên vật tư" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Grid.ColumnSpan="2" />
-                    <ComboBox ItemsSource="{Binding Unit}" SelectedItem="{Binding SelectedUnit, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                    <ComboBox ItemsSource="{Binding Units}" DisplayMemberPath="DisplayName" SelectedItem="{Binding SelectedUnit, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
                               Margin="5" Grid.Row="1" materialDesign:ComboBoxAssist.MaxLength="2" 
                               materialDesign:HintAssist.Hint="Đơn vị đo" 
                               materialDesign:HintAssist.HintOpacity=".26" IsEditable="True" Grid.ColumnSpan="2" >
                     </ComboBox>
 
-                    <ComboBox ItemsSource="{Binding Supplier}" SelectedItem="{Binding SelectedSupplier, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                    <ComboBox ItemsSource="{Binding Suppliers}" DisplayMemberPath="DisplayName" SelectedItem="{Binding SelectedSupplier, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
                               Margin="5" Grid.Row="2" materialDesign:ComboBoxAssist.MaxLength="2" 
-                              materialDesign:HintAssist.Hint="Search" 
+                              materialDesign:HintAssist.Hint="Nhà cung cấp" 
                               materialDesign:HintAssist.HintOpacity=".26" IsEditable="True" Grid.ColumnSpan="2" >
                     </ComboBox>
 

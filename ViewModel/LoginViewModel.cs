@@ -33,39 +33,32 @@ namespace InventoryManagement.ViewModel
 
 
         public ICommand LoginCommand { get; set; }
-
+        public ICommand RegisterCommand { get; set; }
         public LoginViewModel()
         {
             LoginCommand = new RelayCommand<Window>((p) => { return true; }, (p) =>
             {
-                Login(p);
+                if (p == null) return;
+                var accCount = InventoryManagementContext.INSTANCE.Users.Where(user =>
+                user.UserName == _userName && user.Password == _password).Count();
+
+                if (accCount > 0)
+                {
+                    IsLogin = true;
+                    p.Close();
+                }
+                else
+                {
+                    IsLogin = false;
+                    MessageBox.Show("Sai tên đăng nhập hoặc mật khẩu");
+                }
             });
-        }
 
-        private void Login(Window p)
-        {
-            if (p == null)
+            RegisterCommand = new RelayCommand<object>(p => { return true; }, p =>
             {
-                return;
-            }
-
-            /*
-             Check login is succeed or not here
-             */
-
-            var accCount = InventoryManagementContext.INSTANCE.Users.Where(user =>
-            user.UserName == _userName && user.Password == _password).Count();
-
-            if (accCount > 0)
-            {
-                IsLogin = true;
-                p.Close();
-            }
-            else
-            {
-                IsLogin = false;
-                MessageBox.Show("Đăng nhập cái địt mẹ mày");
-            }
+                RegisterWindow registerWindow = new RegisterWindow();
+                registerWindow.ShowDialog();
+            });
         }
     }
 }

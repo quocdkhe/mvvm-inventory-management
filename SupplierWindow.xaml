@@ -8,11 +8,11 @@
         
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         Style="{StaticResource MaterialDesignWindow}"
-        DataContext="{StaticResource MainVM}"
+        DataContext="{StaticResource SupplierVM}"
         ResizeMode="CanMinimize"
         x:Name="window"
         
-        Title="Nhà cung cấp" Height="650" Width="800">
+        Title="Nhà cung cấp" Height="650" Width="1000">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"></RowDefinition>
@@ -29,10 +29,6 @@
             <!--các element binding từ selected item-->
             <materialDesign:Card Grid.Row="0" Margin="5">
                 <Grid>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="253*"/>
-                        <ColumnDefinition Width="537*"/>
-                    </Grid.ColumnDefinitions>
                     <Grid.RowDefinitions>
                         <RowDefinition></RowDefinition>
                         <RowDefinition></RowDefinition>
@@ -42,12 +38,12 @@
                         <RowDefinition></RowDefinition>
                         <RowDefinition></RowDefinition>
                     </Grid.RowDefinitions>
-                    <TextBox Grid.Row="0" Text="{Binding DisplayName, UpdateSourceTrigger=PropertyChanged}" Margin="5,5,5,5" materialDesign:HintAssist.Hint="Tên nhà cung cấp" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Grid.ColumnSpan="2" />
-                    <TextBox Grid.Row="1" Text="{Binding Address, UpdateSourceTrigger=PropertyChanged}" Margin="5,5,5,5" materialDesign:HintAssist.Hint="Địa chỉ" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Grid.ColumnSpan="2" />
-                    <TextBox Grid.Row="2" Text="{Binding PhoneNumber, UpdateSourceTrigger=PropertyChanged}" Margin="5,5,5,5" materialDesign:HintAssist.Hint="Số điện thoại" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Grid.ColumnSpan="2" />
-                    <TextBox Grid.Row="3" Text="{Binding Email, UpdateSourceTrigger=PropertyChanged}" Margin="5,5,5,5" materialDesign:HintAssist.Hint="Email" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Grid.ColumnSpan="2" />
-                    <DatePicker SelectedDate="{Binding ContractDate, UpdateSourceTrigger=PropertyChanged}" Grid.Row="4" materialDesign:HintAssist.Hint="Ngày hợp tác" Margin="5,5,5,5"  materialDesign:TextFieldAssist.HasClearButton="True" Style="{StaticResource MaterialDesignFloatingHintDatePicker}" Grid.ColumnSpan="2"/>
-                    <TextBox Grid.Row="5" Text="{Binding MoreInfo, UpdateSourceTrigger=PropertyChanged}" Margin="5,5,5,5" materialDesign:HintAssist.Hint="Thông tin thêm" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Grid.ColumnSpan="2" />
+                    <TextBox Grid.Row="0" Text="{Binding DisplayName, UpdateSourceTrigger=PropertyChanged}" Margin="5" materialDesign:HintAssist.Hint="Tên nhà cung cấp" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Grid.ColumnSpan="2" />
+                    <TextBox Grid.Row="1" Text="{Binding Address, UpdateSourceTrigger=PropertyChanged}" Margin="5" materialDesign:HintAssist.Hint="Địa chỉ" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Grid.ColumnSpan="2" />
+                    <TextBox Grid.Row="2" Text="{Binding Phone, UpdateSourceTrigger=PropertyChanged}" Margin="5" materialDesign:HintAssist.Hint="Số điện thoại" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Grid.ColumnSpan="2" />
+                    <TextBox Grid.Row="3" Text="{Binding Email, UpdateSourceTrigger=PropertyChanged}" Margin="5" materialDesign:HintAssist.Hint="Email" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Grid.ColumnSpan="2" />
+                    <DatePicker Grid.Row="4" SelectedDate="{Binding ContractDate, UpdateSourceTrigger=PropertyChanged}"  materialDesign:HintAssist.Hint="Ngày hợp tác" Margin="5"  materialDesign:TextFieldAssist.HasClearButton="True" Style="{StaticResource MaterialDesignFloatingHintDatePicker}" Grid.ColumnSpan="2"/>
+                    <TextBox Grid.Row="5" Text="{Binding MoreInfo, UpdateSourceTrigger=PropertyChanged}" Margin="5" materialDesign:HintAssist.Hint="Thông tin thêm" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Grid.ColumnSpan="2" />
                 </Grid>
             </materialDesign:Card>
 
@@ -69,7 +65,7 @@
                                 <GridViewColumn Header="Địa chỉ" DisplayMemberBinding="{Binding Address}"></GridViewColumn>
                                 <GridViewColumn Header="Điện thoại" DisplayMemberBinding="{Binding Phone}"></GridViewColumn>
                                 <GridViewColumn Header="Email" DisplayMemberBinding="{Binding Email}"></GridViewColumn>
-                                <GridViewColumn Header="Ngày hợp tác" DisplayMemberBinding="{Binding ContractDate}"></GridViewColumn>
+                                <GridViewColumn Header="Ngày hợp tác" DisplayMemberBinding="{Binding ContractDate, StringFormat='dd/MM/yyyy'}"></GridViewColumn>
                                 <GridViewColumn Header="Thông tin thêm" DisplayMemberBinding="{Binding MoreInfo}"></GridViewColumn>
                             </GridView>
                         </ListView.View>

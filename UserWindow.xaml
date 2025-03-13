@@ -8,11 +8,10 @@
         
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         Style="{StaticResource MaterialDesignWindow}"
-        DataContext="{StaticResource MainVM}"
+        DataContext="{StaticResource UserVM}"
         ResizeMode="CanMinimize"
         x:Name="window"
-        
-        Title="Vật tư" Height="650" Width="800">
+        Title="Quản lí người dùng" Height="650" Width="800">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"></RowDefinition>
@@ -33,14 +32,24 @@
                         <RowDefinition></RowDefinition>
                         <RowDefinition></RowDefinition>
                         <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
                     </Grid.RowDefinitions>
-                    <TextBox Grid.Row="0" Text="{Binding UserName, UpdateSourceTrigger=PropertyChanged}" Margin="5" materialDesign:HintAssist.Hint="Tên đăng nhập" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Grid.ColumnSpan="2" />
-                    <ComboBox ItemsSource="{Binding Role}" SelectedItem="{Binding SelectedRole, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
-                              Margin="5" Grid.Row="1" materialDesign:ComboBoxAssist.MaxLength="2" 
+                    <TextBox Grid.Row="0" Text="{Binding UserName, UpdateSourceTrigger=PropertyChanged}" Margin="5" materialDesign:HintAssist.Hint="Tên đăng nhập" Style="{StaticResource MaterialDesignFloatingHintTextBox}"  />
+                    <PasswordBox Grid.Row="1" Margin="5"
+                        PasswordChanged="PasswordBox_PasswordChanged"
+                        x:Name="FloatingPasswordBox"
+                        VerticalAlignment="Center"
+                        materialDesign:HintAssist.Foreground="Purple"
+                        materialDesign:HintAssist.Hint="Mật khẩu"
+                        materialDesign:TextFieldAssist.UnderlineBrush="Purple"
+                        Style="{StaticResource MaterialDesignFloatingHintPasswordBox}"
+                    />
+                    <ComboBox Grid.Row="2" ItemsSource="{Binding Roles}" DisplayMemberPath="DisplayName" SelectedItem="{Binding SelectedRole, UpdateSourceTrigger=PropertyChanged}"
+                              Margin="5"  materialDesign:ComboBoxAssist.MaxLength="2" 
                               materialDesign:HintAssist.Hint="Quyền hạn" 
                               materialDesign:HintAssist.HintOpacity=".26" IsEditable="True" Grid.ColumnSpan="2" >
                     </ComboBox>
-                    <TextBox Grid.Row="3" Text="{Binding DisplayName, UpdateSourceTrigger=PropertyChanged}" Margin="5" materialDesign:HintAssist.Hint="Họ và tên" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Grid.ColumnSpan="2" />
+                    <TextBox Grid.Row="3" Text="{Binding DisplayName, UpdateSourceTrigger=PropertyChanged}" Margin="5" materialDesign:HintAssist.Hint="Họ và tên" Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
                 </Grid>
             </materialDesign:Card>
 
@@ -49,19 +58,19 @@
                     <Button Command="{Binding AddCommand}" Content="Thêm" Margin="5" Width="100"></Button>
                     <Button Command="{Binding EditCommand}" Content="Sửa" Margin="5" Width="100"></Button>
                     <Button Command="{Binding DeleteCommand}" Content="Xóa" Margin="5" Width="100"></Button>
-                    <Button Command="{Binding ChangePassCommand}" Content="Đổi mật khẩu" Margin="5" Width="120"></Button>
+                    <Button Command="{Binding ChangePasswordCommand}" Content="Đổi mật khẩu" Margin="5" Width="120"></Button>
                 </WrapPanel>
             </materialDesign:Card>
 
             <materialDesign:Card Grid.Row="2" Margin="5" VerticalAlignment="Stretch">
-                <ScrollViewer VerticalScrollBarVisibility="Auto">
+                <ScrollViewer HorizontalScrollBarVisibility="Auto">
                     <ListView ItemsSource="{Binding List}" SelectedItem="{Binding SelectedItem, Mode=OneWayToSource}">
                         <ListView.View>
                             <GridView>
-                                <GridViewColumn Header="Id" DisplayMemberBinding="{Binding Id}"></GridViewColumn>
-                                <GridViewColumn Header="Tên đăng nhập" DisplayMemberBinding="{Binding UserName}"></GridViewColumn>
-                                <GridViewColumn Header="Họ và tên" DisplayMemberBinding="{Binding DisplayName}"></GridViewColumn>
-                                <GridViewColumn Header="Quyền hạn" DisplayMemberBinding="{Binding Role.DisplayName}"></GridViewColumn>
+                                <GridViewColumn Width="50" Header="Id" DisplayMemberBinding="{Binding Id}"></GridViewColumn>
+                                <GridViewColumn Width="200" Header="Tên đăng nhập" DisplayMemberBinding="{Binding UserName}"></GridViewColumn>
+                                <GridViewColumn Width="200" Header="Họ và tên" DisplayMemberBinding="{Binding DisplayName}"></GridViewColumn>
+                                <GridViewColumn Width="200" Header="Quyền hạn" DisplayMemberBinding="{Binding Role.DisplayName}"></GridViewColumn>
                             </GridView>
                         </ListView.View>
                     </ListView>

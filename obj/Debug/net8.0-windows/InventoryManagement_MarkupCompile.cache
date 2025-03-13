@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 D:\.net\InventoryManagement\App.xaml
-10-1137474739
+12251841007
 
-23-1461815789
+30-432471794
 238-1295504946
-CustomerWindow.xaml;InputWindow.xaml;LoginWindow.xaml;MainWindow.xaml;ObjectWindow.xaml;OutputWindow.xaml;ResourceXAML\MainResource.xaml;SupplierWindow.xaml;UnitWindow.xaml;UserWindow.xaml;
+ChangePasswordWindow.xaml;CustomerWindow.xaml;InputWindow.xaml;LoginWindow.xaml;MainWindow.xaml;ObjectWindow.xaml;OutputWindow.xaml;RegisterWindow.xaml;ResourceXAML\MainResource.xaml;SupplierWindow.xaml;UnitWindow.xaml;UserWindow.xaml;
 
 False
 

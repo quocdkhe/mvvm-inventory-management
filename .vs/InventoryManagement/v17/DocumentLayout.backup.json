@@ -3,20 +3,16 @@
   "WorkspaceRootPath": "D:\\.net\\InventoryManagement\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{420167D4-0475-4916-90D0-DC7D6574B257}|InventoryManagement.csproj|d:\\.net\\inventorymanagement\\viewmodel\\unitviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{420167D4-0475-4916-90D0-DC7D6574B257}|InventoryManagement.csproj|solutionrelative:viewmodel\\unitviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{420167D4-0475-4916-90D0-DC7D6574B257}|InventoryManagement.csproj|d:\\.net\\inventorymanagement\\viewmodel\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{420167D4-0475-4916-90D0-DC7D6574B257}|InventoryManagement.csproj|solutionrelative:viewmodel\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{420167D4-0475-4916-90D0-DC7D6574B257}|InventoryManagement.csproj|d:\\.net\\inventorymanagement\\unitwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{420167D4-0475-4916-90D0-DC7D6574B257}|InventoryManagement.csproj|solutionrelative:unitwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{420167D4-0475-4916-90D0-DC7D6574B257}|InventoryManagement.csproj|d:\\.net\\inventorymanagement\\loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{420167D4-0475-4916-90D0-DC7D6574B257}|InventoryManagement.csproj|solutionrelative:loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{420167D4-0475-4916-90D0-DC7D6574B257}|InventoryManagement.csproj|d:\\.net\\inventorymanagement\\resourcexaml\\mainresource.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{420167D4-0475-4916-90D0-DC7D6574B257}|InventoryManagement.csproj|solutionrelative:resourcexaml\\mainresource.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{420167D4-0475-4916-90D0-DC7D6574B257}|InventoryManagement.csproj|d:\\.net\\inventorymanagement\\viewmodel\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{420167D4-0475-4916-90D0-DC7D6574B257}|InventoryManagement.csproj|solutionrelative:viewmodel\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{420167D4-0475-4916-90D0-DC7D6574B257}|InventoryManagement.csproj|d:\\.net\\inventorymanagement\\viewmodel\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{420167D4-0475-4916-90D0-DC7D6574B257}|InventoryManagement.csproj|solutionrelative:viewmodel\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,60 +22,53 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "MainViewModel.cs",
-              "DocumentMoniker": "D:\\.net\\InventoryManagement\\ViewModel\\MainViewModel.cs",
-              "RelativeDocumentMoniker": "ViewModel\\MainViewModel.cs",
-              "ToolTip": "D:\\.net\\InventoryManagement\\ViewModel\\MainViewModel.cs",
-              "RelativeToolTip": "ViewModel\\MainViewModel.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-12T08:45:37.73Z",
+              "DocumentIndex": 1,
+              "Title": "LoginWindow.xaml",
+              "DocumentMoniker": "D:\\.net\\InventoryManagement\\LoginWindow.xaml",
+              "RelativeDocumentMoniker": "LoginWindow.xaml",
+              "ToolTip": "D:\\.net\\InventoryManagement\\LoginWindow.xaml",
+              "RelativeToolTip": "LoginWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-13T16:46:01.444Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "UnitViewModel.cs",
-              "DocumentMoniker": "D:\\.net\\InventoryManagement\\ViewModel\\UnitViewModel.cs",
-              "RelativeDocumentMoniker": "ViewModel\\UnitViewModel.cs",
-              "ToolTip": "D:\\.net\\InventoryManagement\\ViewModel\\UnitViewModel.cs",
-              "RelativeToolTip": "ViewModel\\UnitViewModel.cs",
-              "ViewState": "AgIAAFsAAAAAAAAAAAAxwHoAAAAFAAAAAAAAAA==",
+              "Title": "RegisterViewModel.cs",
+              "DocumentMoniker": "D:\\.net\\InventoryManagement\\ViewModel\\RegisterViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModel\\RegisterViewModel.cs",
+              "ToolTip": "D:\\.net\\InventoryManagement\\ViewModel\\RegisterViewModel.cs",
+              "RelativeToolTip": "ViewModel\\RegisterViewModel.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAA0wC8AAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-12T08:19:50.77Z",
+              "WhenOpened": "2025-03-13T16:51:57.143Z",
               "EditorCaption": ""
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "UnitWindow.xaml",
-              "DocumentMoniker": "D:\\.net\\InventoryManagement\\UnitWindow.xaml",
-              "RelativeDocumentMoniker": "UnitWindow.xaml",
-              "ToolTip": "D:\\.net\\InventoryManagement\\UnitWindow.xaml",
-              "RelativeToolTip": "UnitWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-03-12T08:19:30.653Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "MainResource.xaml",
-              "DocumentMoniker": "D:\\.net\\InventoryManagement\\ResourceXAML\\MainResource.xaml",
-              "RelativeDocumentMoniker": "ResourceXAML\\MainResource.xaml",
-              "ToolTip": "D:\\.net\\InventoryManagement\\ResourceXAML\\MainResource.xaml",
-              "RelativeToolTip": "ResourceXAML\\MainResource.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-03-12T08:18:44.781Z",
+              "Title": "LoginViewModel.cs",
+              "DocumentMoniker": "D:\\.net\\InventoryManagement\\ViewModel\\LoginViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModel\\LoginViewModel.cs",
+              "ToolTip": "D:\\.net\\InventoryManagement\\ViewModel\\LoginViewModel.cs",
+              "RelativeToolTip": "ViewModel\\LoginViewModel.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAUwD0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-13T16:46:04.074Z",
               "EditorCaption": ""
             }
           ]

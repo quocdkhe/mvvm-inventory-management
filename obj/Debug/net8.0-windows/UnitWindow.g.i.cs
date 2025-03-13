@@ -64,7 +64,7 @@ namespace InventoryManagement {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/InventoryManagement;V1.0.0.0;component/unitwindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/InventoryManagement;component/unitwindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\UnitWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

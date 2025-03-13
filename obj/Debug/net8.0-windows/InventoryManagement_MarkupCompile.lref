@@ -10,4 +10,6 @@ FD:\.net\InventoryManagement\ResourceXAML\MainResource.xaml;;
 FD:\.net\InventoryManagement\SupplierWindow.xaml;;
 FD:\.net\InventoryManagement\UnitWindow.xaml;;
 FD:\.net\InventoryManagement\UserWindow.xaml;;
+FD:\.net\InventoryManagement\RegisterWindow.xaml;;
+FD:\.net\InventoryManagement\ChangePasswordWindow.xaml;;
 

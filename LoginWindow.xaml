@@ -59,6 +59,7 @@
                     />
                     
                     <Button Grid.Column="1" Margin="5" 
+                        Command="{Binding RegisterCommand}"
                         Content="Đăng kí"
                         Style="{StaticResource MaterialDesignPaperButton}"
                         ToolTip="Resource name: MaterialDesignPaperButton"

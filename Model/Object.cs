@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using Microsoft.EntityFrameworkCore;
 
 namespace InventoryManagement.Model;
 
@@ -20,7 +17,7 @@ public partial class Object
 
     [Column("QRCode")]
     [StringLength(255)]
-    public string? Qrcode { get; set; }
+    public string? QRCode { get; set; }
 
     [StringLength(255)]
     public string? BarCode { get; set; }

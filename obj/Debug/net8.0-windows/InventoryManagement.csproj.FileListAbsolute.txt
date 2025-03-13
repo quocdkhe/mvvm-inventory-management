@@ -174,3 +174,8 @@ D:\.net\InventoryManagement\bin\Debug\net8.0-windows\runtimes\win\lib\net6.0\Sys
 D:\.net\InventoryManagement\bin\Debug\net8.0-windows\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
 D:\.net\InventoryManagement\bin\Debug\net8.0-windows\Microsoft.Extensions.Configuration.Binder.dll
 D:\.net\InventoryManagement\bin\Debug\net8.0-windows\appsettings.json
+D:\.net\InventoryManagement\obj\Debug\net8.0-windows\InventoryManagement.sourcelink.json
+D:\.net\InventoryManagement\obj\Debug\net8.0-windows\RegisterWindow.g.cs
+D:\.net\InventoryManagement\obj\Debug\net8.0-windows\RegisterWindow.baml
+D:\.net\InventoryManagement\obj\Debug\net8.0-windows\ChangePasswordWindow.g.cs
+D:\.net\InventoryManagement\obj\Debug\net8.0-windows\ChangePasswordWindow.baml
